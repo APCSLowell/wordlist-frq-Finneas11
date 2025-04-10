@@ -20,13 +20,16 @@ public class WordList
   }
 
   public void removeWordsOfLength(int len)
-  {
-   int i = 0;
-    while( i < myList.size() ){
-      if( myList.get(i).length() == len){
-      myList.remove(i)
+ {
+  int i = 0;
+  while (i < myList.size()) {
+    if (myList.get(i).length() == len) {
+      myList.remove(i);
+    } else {
+      i++;
+    }
   }
-        }
-      else { i++ }
+}
+
 
 }
